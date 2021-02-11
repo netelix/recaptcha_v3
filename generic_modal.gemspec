@@ -6,11 +6,11 @@ require "recaptcha_v3/version"
 Gem::Specification.new do |spec|
   spec.name          = "recaptcha_v3"
   spec.version       = RecaptchaV3::VERSION
-  spec.authors       = ["lucasandrad"]
-  spec.email         = ["lucasandrad@yandex.com"]
+  spec.authors       = ["Alexis Panet"]
+  spec.email         = ["netelix@gmail.com"]
 
-  spec.summary       = %q{This gem is a generic modal}
-  spec.description   = %q{This gem is a generic modal, user can open a modal}
+  spec.summary       = %q{Easily add and manage Google Captcha}
+  spec.description   = %q{Easily add and manage Google Captcha}
   spec.homepage      = "https://github.com/netelix/recaptcha_v3"
   spec.license       = "MIT"
 

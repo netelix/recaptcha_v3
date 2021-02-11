@@ -20,7 +20,7 @@ Or install it yourself as:
 
     $ gem install recaptcha_v3
 
-## Usage
+## Installation
 
 ### Getting Google API Keys
 First you need to create a pair of keys for Google Recaptcha V3.
@@ -84,6 +84,20 @@ in the <body> tag of your page, call `recaptcha_v3`
 <head>
     <script src="https://www.google.com/recaptcha/api.js?render=<%= ENV['GOOGLE_CAPTCHA_CLIENT'] %>" async defer></script>
 </head>
+```
+
+## Usage
+
+Call `recaptcha_valid?` from a controller to check if the user is a bot (for example before sending an email)
+
+
+```ruby
+  if recaptcha_valid?
+    send_message
+  else
+    do_something_to_punish_the_bot
+  end
+
 ```
 
 ## Development
