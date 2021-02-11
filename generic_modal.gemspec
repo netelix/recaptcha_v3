@@ -5,7 +5,7 @@ require "recaptcha_v3/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "recaptcha_v3"
-  spec.version       = GenericModal::VERSION
+  spec.version       = RecaptchaV3::VERSION
   spec.authors       = ["lucasandrad"]
   spec.email         = ["lucasandrad@yandex.com"]
 
