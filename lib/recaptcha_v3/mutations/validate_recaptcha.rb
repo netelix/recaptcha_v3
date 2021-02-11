@@ -1,6 +1,6 @@
 module RecaptchaV3
   module Mutations
-    class ValidateRecaptcha < Mutations::Command
+    class ValidateRecaptcha < ::Mutations::Command
       required { duck :params }
       optional { string :ip }
 
