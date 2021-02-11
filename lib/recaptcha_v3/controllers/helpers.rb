@@ -15,7 +15,7 @@ module RecaptchaV3
           return true if user_already_validate_captcha?
 
           session[:user_already_validate_captcha] =
-            ValidateRecaptcha.run!(params: params, ip: request.remote_ip)
+            RecaptchaV3::Mutations::ValidateRecaptcha.run!(params: params, ip: request.remote_ip)
         end
 
         def user_already_validate_captcha?
