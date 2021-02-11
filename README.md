@@ -59,6 +59,15 @@ class ApplicationController < ActionController::Base
 end  
 ```
 
+### Require javascript
+
+in `application.js`
+
+```javascript
+//= require global_variable
+//= require recaptcha_v3
+```
+
 ### Call recaptcha_data_attribute from your main view
 
 in the <body> tag of your page, call `recaptcha_v3` 
@@ -68,6 +77,14 @@ in the <body> tag of your page, call `recaptcha_v3`
     ...
 </body>
 ````
+
+### Add Google Recaptcha script to your header
+
+```html
+<head>
+    <script src="https://www.google.com/recaptcha/api.js?render=<%= ENV['GOOGLE_CAPTCHA_CLIENT'] %>" async defer></script>
+</head>
+```
 
 ## Development
 
