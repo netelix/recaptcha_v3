@@ -44,7 +44,7 @@ Recaptcha =
 
       doSomethingWithTheToken: function(something){
         grecaptcha.ready(function() {
-          grecaptcha.execute('<%= ENV['GOOGLE_CAPTCHA_CLIENT'] %>').then(something);
+          grecaptcha.execute($('[data-recaptcha-client-id]').data('recaptcha-client-id')).then(something);
         });
       },
 
